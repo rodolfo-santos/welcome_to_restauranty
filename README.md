@@ -20,7 +20,7 @@
 
 <br />
 
-# 💻 Baby Name Generator (NUXT3)
+# 💻 Welcome to Restauranty (NUXT3)
 
 A small project created with Nuxt3
 
