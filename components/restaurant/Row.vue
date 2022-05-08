@@ -13,11 +13,7 @@ const props = defineProps<RowProps>();
     <h4 class="header">Rank</h4>
     <h4 class="header">Chain</h4>
   </div>
-  <div
-    v-else
-    class="row"
-    :style="index % 2 === 0 ? { background: 'rgba(128,128,128,0.15)' } : null"
-  >
+  <div v-else class="row" :style="index % 2 === 0 ? { background: 'rgba(128,128,128,0.15)' } : null">
     <h4 class="header rank">{{ rank }}</h4>
     <a :href="`/restaurants/${name}`" class="header link">{{ name }}</a>
   </div>

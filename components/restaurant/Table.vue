@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import restaurants from "@/data.json";
+import restaurants from '@/data.json';
 const restaurantsOrganized = {
   first: [...restaurants].splice(0, 25),
-  second: [...restaurants].splice(25, 25),
+  second: [...restaurants].splice(25, 25)
 };
 </script>
 
@@ -17,8 +17,7 @@ const restaurantsOrganized = {
           :key="restaurant.id"
           :name="restaurant.name"
           :rank="restaurant.rank"
-          :index="index"
-        />
+          :index="index" />
       </div>
       <div class="table-col">
         <RestaurantRow :isHeader="true" />
@@ -27,8 +26,7 @@ const restaurantsOrganized = {
           :key="restaurant.id"
           :name="restaurant.name"
           :rank="restaurant.rank"
-          :index="index"
-        />
+          :index="index" />
       </div>
     </div>
   </div>
